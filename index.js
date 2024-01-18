@@ -1,5 +1,5 @@
 //Initiate class for folders
-class File {
+class Folder {
     constrcutor(name) {
         this.name = name
     }
