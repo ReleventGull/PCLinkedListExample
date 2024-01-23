@@ -24,3 +24,35 @@ pcFolder.programsFiles = programFilesFolder
 //Make the 'MY PC' folder to the head of the List constructor, also referred to as the computer
 let computer = new List(pcFolder)
 console.log(computer.head)
+
+
+//Initiate rank nodes
+class Rank {
+    constructor(name) {
+        this.name = name
+    }
+}
+
+class RankList {
+    constructor(head) {
+        this.head=head
+    }
+}
+
+//Initiate rank names
+let platinum = new Rank("Platinum")
+let diamond = new Rank("Diamond")
+let champion = new Rank("Champian")
+let grandChamp = new Rank("Grand Champion")
+
+
+//Use the .next to connect the ranks
+platinum.next = diamond
+diamond.next = champion
+champion.next = grandChamp
+
+//Connect the first node to the head of the rank list
+let ranks = new RankList(platinum)
+console.log(ranks.head.next.next)
+
+
