@@ -26,10 +26,23 @@ let computer = new List(pcFolder)
 console.log(computer.head)
 
 
-
+//Initiate rank nodes
 class Rank {
     constructor(name) {
         this.name = name
     }
 }
+
+//Initiate rank names
+let platinum = new Rank("Platinum")
+let diamond = new Rank("Diamond")
+let champion = new Rank("Champian")
+let grandChamp = new Rank("Grand Champion")
+
+
+//Use the .next to connect the ranks
+platinum.next = diamond
+diamond.next = champion
+champion.next = grandChamp
+
 
