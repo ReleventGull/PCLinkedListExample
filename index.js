@@ -24,3 +24,12 @@ pcFolder.programsFiles = programFilesFolder
 //Make the 'MY PC' folder to the head of the List constructor, also referred to as the computer
 let computer = new List(pcFolder)
 console.log(computer.head)
+
+
+
+class Rank {
+    constructor(name) {
+        this.name = name
+    }
+}
+
