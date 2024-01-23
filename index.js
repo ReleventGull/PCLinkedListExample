@@ -33,6 +33,12 @@ class Rank {
     }
 }
 
+class RankList {
+    constructor(head) {
+        this.head=head
+    }
+}
+
 //Initiate rank names
 let platinum = new Rank("Platinum")
 let diamond = new Rank("Diamond")
@@ -44,5 +50,9 @@ let grandChamp = new Rank("Grand Champion")
 platinum.next = diamond
 diamond.next = champion
 champion.next = grandChamp
+
+//Connect the first node to the head of the rank list
+let ranks = new RankList(platinum)
+console.log(ranks.head.next.next)
 
 
